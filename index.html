@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noordeejah AI - Personal AI Fashion Assistant</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for modern vector icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">Noordeejah <span class="accent">AI</span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#assistant">AI Stylist</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Your Personal AI Fashion Curator</h1>
+                <p>Discover personalized outfits tailored to your unique style, body profile, and occasion. Noordeejah AI acts as your digital wardrobe consultant, helping you look and feel your best.</p>
+                <div class="hero-cta">
+                    <a href="#assistant" class="btn btn-primary">Start Styling</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="visual-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <div class="visual-sparkles">
+                        <i class="fa-solid fa-sparkles spark-1"></i>
+                        <i class="fa-solid fa-wand-magic-sparkles spark-2"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="section-title">
+                <h2>Intelligent Style Solutions</h2>
+                <p>Explore some of the features Noordeejah AI offers to elevate your wardrobe.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Color Analysis</h3>
+                    <p>Receive personalized shade suggestions based on seasonal and contrast-based color theories.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Curated Outfits</h3>
+                    <p>Input your occasion, current temperature, or wardrobe vibe to receive visual styling formulas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Capsule Wardrobe Planner</h3>
+                    <p>Build a minimal, highly functional wardrobe list consisting of essential foundation items.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Assistant Chat Interface -->
+        <section id="assistant" class="assistant-section">
+            <div class="section-title">
+                <h2>Chat with Noordeejah AI</h2>
+                <p>Ask questions about outfit pairings, color coordination, dress codes, and more.</p>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="assistant-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="assistant-status">
+                        <h3>Noordeejah AI</h3>
+                        <span class="status-indicator">Online</span>
+                    </div>
+                </div>
+
+                <!-- Chat message history -->
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant-msg">
+                        <div class="msg-bubble">
+                            <p>Hello! I am Noordeejah, your digital fashion consultant. What occasion or styling query can I help you with today?</p>
+                        </div>
+                        <span class="msg-time">Just now</span>
+                    </div>
+                </div>
+
+                <!-- Suggested Quick Prompts -->
+                <div class="quick-tags" id="quickTags">
+                    <button class="tag-btn" data-query="What should I wear to a casual summer wedding?">Summer Wedding Look</button>
+                    <button class="tag-btn" data-query="What colors go well with olive green pants?">Olive Green Styling</button>
+                    <button class="tag-btn" data-query="Give me ideas for a 10-piece capsule wardrobe.">Capsule Wardrobe</button>
+                </div>
+
+                <!-- User input field -->
+                <div class="chat-input-area">
+                    <form id="chatForm">
+                        <input type="text" id="userInput" placeholder="Type your fashion question here..." required autocomplete="off">
+                        <button type="submit" class="btn-send" aria-label="Send message">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About Noordeejah AI</h2>
+                <p>Noordeejah AI was designed to simplify how we view styling. By matching fashion insights with helpful personal advice, our assistant aims to take the guesswork out of daily coordination. Whether you are prepping for a career interview, rebuilding a wardrobe, or curious about the latest seasonal styling trends, Noordeejah AI is ready to suggest tailored ideas.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Noordeejah AI</h3>
+                <p>Elevating daily style through curated, intelligent advice.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#assistant">AI Stylist</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Social links</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Noordeejah AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+</html>
